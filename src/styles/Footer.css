@@ -1,0 +1,27 @@
+.footer
+{
+    background: #1e272e;
+    color: #fff;
+    padding: 30px;
+}
+.footerTop
+{
+    display: flex;
+    align-items: center;
+}
+.btnSubscribe
+{
+    display: flex;
+    flex-direction: row;
+}
+.footer .footerTop
+{
+    color: #ffff;
+}
+.style a
+{
+    display: block;
+    color: #ffff;
+    text-decoration: none;
+    line-height: 30px;
+}

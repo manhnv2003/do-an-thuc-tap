@@ -1,0 +1,195 @@
+.slide
+{
+    width: 100%;
+}
+.slide.fixed
+{
+    /* background: #7f8c8d; */
+    position: sticky !important;
+    top: 0;
+    transition: 0.1s ease-in-out;
+    z-index: 30;
+}
+.topnavbar{
+    width: 100%;
+}
+.bg-body-tertiary{
+    z-index: 1000;
+}
+.navbar
+{
+    z-index: 1000;
+}
+@media only screen and (max-width: 700px)
+{
+   .justify-content-end .first
+   {
+    display: none;
+    visibility: hidden;
+   } 
+   /* .toggle
+   {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+   }
+   .toggle .line1
+   {
+    display: flex;
+    width: 40px;
+    height: 4px;
+    align-items: center;
+    background: black;
+    color: black;
+    z-index: 10000;
+   } */
+   .box-togle
+   {
+    position: relative;
+    top: 0;
+    right: 60px;
+    float: right;
+    /* position: absolute;
+    right: 100px; */
+    /* display: flex; */
+    /* height: 80px;
+    height: 50px; */
+    /* flex-direction: column; */
+    /* align-items: center;
+    text-align: center; */
+   }
+   .box-togle .line1,.line2,.line3
+   {
+    width: 60px;
+    height: 4px;
+    background: black;
+    line-height: 9px;
+    margin-top: 9px;
+   }
+   .toggle .test.active
+   {
+    position: absolute;
+    top: 70px;
+    right: 90px;
+    background: rgb(49, 41, 41);
+    height: 340px;
+    width: 170px;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1000;
+   }
+   .toggle .test.active .iconstyle
+   {
+    color: #fff;
+   }
+   .toggle .test.active a
+   {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: left;
+    padding: 20px;
+    color: #ffff;
+   }
+.toggle .test.active
+    {
+        /* visibility: visible; */
+        display: block;
+    }
+}
+/*  */
+.toggle .test
+{
+    /* visibility: hidden; */
+    display: none;
+}
+
+/*  */
+.navbar.hidden{
+    visibility: hidden;
+}
+/*  */
+.displayProduct
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* overflow: scroll; */
+    height: 100vh;
+    width: 100%;
+    /* opacity: 0.5; */
+    /* background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), */
+}
+.displayProduct .bright-bg
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    opacity: 0.6;
+   background: #353b48;
+   filter: brightness(50%);
+}
+.displayProduct .productSearch
+{
+    position: absolute;
+    overflow: scroll;
+    top: 170px;
+    width: 76%;
+    justify-content: center;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #c8d6e5;
+    opacity: 1;
+    z-index: 1000;
+}
+.displayProduct .productSearch .card
+{
+    padding: 10px;
+    margin: 30px;
+}
+.displayProduct .productSearch .btn-cancel 
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+}
+.displayProduct .productSearch .btn-cancel img
+{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 1000;
+}
+.displayProduct .productSearch .btn-cancel img:hover
+{
+    background: #e84118;
+}
+.displayProduct .productSearch .products
+{
+    position: absolute;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.hiddenSearchProduct
+{
+    display: none;
+}
